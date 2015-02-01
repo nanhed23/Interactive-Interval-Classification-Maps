@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title> Jenjira Holmes - Assignment 6 </title>
+
+</head>
+
+<body style="background-color:white">
+
+<h1 style="color:#B10026; font-family:Helvetica"><center>Maps Showing the Average Number of New York Bike Commuters per Day</h1> 
+<h3 style="color:#E31A1C; font-family:Helvetica"><center>Map Classification Types: Equal Interval, Geometrical Interval, Natural Breaks, Quantile and Standard Deviation</h3>
+<h5 style="color:#FC4E2A; font-family:Helvetica"><center>Classification process reduces a large number of individual quantitative values to a smaller number of ordered categories,
+each of which encompasses a portion of the original data value range. Various methods divide the data value range in different ways.
+Various classification methods can have a very large impact on the look of the map. 
+<br>
+<br>
+
+<!--First map: Equal Interval-->
+<h2 style="color:#B10026; font-family:Helvetica"> <center> Equal Interval Classification <center> </h2>
+<p><center>
+<iframe width="810" height="510" src="equalinterval.html">
+</iframe>
+<p> <b>"Equal Interval"</b> is a method that sets the value ranges in each category equal in size. The entire range of data values (max - min) is divided equally into however many categories have been chosen.
+The advantages of using this method of classification is that the category selection is not biased because each category is given the same proportion of the range of values. Moreover,
+this method is good for showing the values that are either over or under represented and it is easy to understand. On the other hand, this method is not good for skewed data distributions
+because nearly all values appear in one class. </p>
+<br>
+
+<!--Second map: Geometrical Interval-->
+<h2 style="color:#B10026; font-family:Helvetica"> <center> Geometrical Interval Classification <center> </h2>
+<p><center>
+<iframe width="810" height="510" src="geometricalinterval.html">
+</iframe>
+<p> <b>"Geometrical Interval"</b> shows the width of each succeeding class interval, larger than the previous interval by a constant amount. The pros are regular class breaks, and it tends to even out 
+class frequencies for skewed distributions while making class widths relatively small in areas where there is high frequency. The cons are that this method is uncommon and it creates
+unequal width class.</p>
+<br>
+
+<!--Third map: Natural Breaks-->
+<h2 style="color:#B10026; font-family:Helvetica"> <center> Natural Breaks Classification <center> </h2>
+<p> <center>
+<iframe width="810" height="510" src="naturalbreaks.html">
+</iframe>
+<p> <b>"Natural Breaks"</b> is designed to place variable values into naturally occurring data categories. One of the advantages of the Natural Breaks classification is that it maximizes the similarity of values within
+each class which increases the precision of the map, given the number of class. However, the Breaks distribution is not well suited for data that have low variance. The class breaks often looks arbritary. Also,
+method will be difficult to grasp for those lacking a background in statistical methods. </p>
+<br>
+
+<!--Fourth map: Quantile-->
+<h2 style="color:#B10026; font-family:Helvetica"> <center> Quantile Classification <center> </h2>
+<p> <center>
+<iframe width="810" height="510" src="quantile.html">
+</iframe>
+<p> <b>"Quantile Classification"</b> classifies data into a certain number of categories with an equal number of units in each category which sets the class break points wherever they need to be to accomplish this.
+The pros of using this method is that each class will have equal representation on the map and it is intuitively appealing. The cons are that this method will create very irregular break points
+(unless data have rectangular distribution) and the break points often seem arbritary.</p>
+<br>
+
+<!--Fifth map-->
+<h2 style="color:#B10026; font-family:Helvetica"> <center> Standard Deviation Classification<center> </h2>
+<p> <center>
+<iframe width="810" height="510" src="standarddeviation.html">
+</iframe>
+<p><b>"Standard Deviation"</b> is the measure of the variability. It places break points at various Standard Deviation intervals above and below the mean. The advantage of this method is that it allows easier comparison
+of maps of variables measured in different metrics. However, on the other hand, many map readers are not familiar with its concept and this method is not good for skewed data. </p>
+<br>
+
+</body>
+</html>
